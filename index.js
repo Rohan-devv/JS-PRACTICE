@@ -35,5 +35,13 @@ var a = 10;
 // var me undefined and let const me refernce error
 */
 
-// Que-4
-  
+/*
+let numbers = [1,2,3,4,5];
+
+let doubled = numbers.map(function(num){
+    return num * 2;
+});
+console.log(doubled);
+*/
+
+
