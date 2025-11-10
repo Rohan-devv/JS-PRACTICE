@@ -35,11 +35,11 @@ const addtwo = (num1, num2) => {
 //console.log(addtwo(3,4));
 
 
-const addtwo = (num1, num2) => num1 + num2
-const addtwo = (num1, num2) => (num1 + num2)// react me bhot baar aise likhna padta hai
+const anotherWay = (num1, num2) => num1 + num2
+const anotherWayy = (num1, num2) => (num1 + num2)// react me bhot baar aise likhna padta hai
 
 // curly brace me return likhna jaruri hai agar function body me multiple line ho to
 
 
 
-const addtwo = (num1, num2) => ({username:"dfgh"})// object return karna ho to aise karna padta hai
+const forObjects = (num1, num2) => ({username:"dfgh"})// object return karna ho to aise karna padta hai
