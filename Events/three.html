@@ -25,7 +25,7 @@
     }
 
     
-
+/*
     document.querySelector('#start').addEventListener('click', function(){
           const intervalId= setInterval(printStart, 1000)
           document.querySelector('#stop').addEventListener('click', function(){
@@ -33,6 +33,54 @@
     })
 
     }) 
+
+
+❌ Why this is worse
+
+Every time you click Start, you add a NEW stop event listener.
+
+Eventually stop button has multiple listeners → memory leak + unexpected behavior.
+
+For example:
+
+Start → Stop works fine.
+
+Start again → Stop now has two listeners.
+
+After repeated clicks, stop becomes messy.
+
+    */ 
+
+
+
+
+    let intervalId;
+
+    document.querySelector('#start').addEventListener('click', function(){
+           intervalId = setInterval(printStart, 1000)
+          
+
+    })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+           clearInterval(intervalId)
+    })
+
+    /*
+ ✔ Why this is better
+
+The event listeners are added once.
+
+The stop button always has access to the same intervalId.
+
+No duplication of event listeners.
+
+Clean, predictable, and scalable.
+    */
+
+
+
+
     
 </script>
 </html>
