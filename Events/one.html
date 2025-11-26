@@ -19,7 +19,15 @@
    </div>
 </body>
 <script>
-/*
+/*   
+
+     document.getElementById('owl').onclick = function(){
+         alert("owl clicked")
+     }
+
+
+
+     
     document.getElementById('images').addEventListener('click', function(e){
          console.log('ul clicked')
     }, false)
@@ -43,12 +51,19 @@
 
     
 */
-    // document.querySelector('#images').addEventListener('click', function(e){
-    //      console.log(e.target.parentNode)
-    //      const target = e.target.parentNode
-    //      target.remove()
 
-    // }, false)
+/* ++++++++++++++++++++++++++++++++++++ BAD WAY TO REMOVE IMAGES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+    document.querySelector('#images').addEventListener('click', function(e){
+         console.log(e.target.parentNode)
+         const target = e.target.parentNode
+         target.remove()
+
+    }, false)
+
+    */
 
 
 
