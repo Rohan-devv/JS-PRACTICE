@@ -58,6 +58,40 @@ After repeated clicks, stop becomes messy.
 
     document.querySelector('#start').addEventListener('click', function(){
            intervalId = setInterval(printStart, 1000)
+
+
+           /*
+
+           🔥 JavaScript me dono kab use hote hain?
+
+           
+✔ A. Jab function ko store karna ho variable me
+const greet = sayHello; // bracket nahi
+
+✔ B. Jab function ko callback ke roop me pass karna ho
+
+Example: event listener, setTimeout, map(), filter() etc.
+
+button.addEventListener("click", sayHello); 
+// yaha reference pass kiya — JS khud click par call karega
+
+
+Agar tu yaha sayHello() likh dega to function turant call ho jayega, click par nahi.
+
+
+🔥 Example 2: Anonymous function me bracket hoti hai
+
+Agar tu direct function likh raha hai, to bracket aayegi:
+
+setInterval(function () {
+  console.log("Hi bhai");
+}, 1000);
+
+
+Yaha bracket isliye lagayi kyunki function declare kiya hai, call nahi kiya.
+
+
+           */
           
 
     })
