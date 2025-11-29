@@ -30,6 +30,71 @@ new Promise(function(resolve, reject){
 })
 
 
+
+
+
+const promiseThree = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        console.log('promise three ')
+        resolve({user: 'Rohan pal', class: 'ece'})
+    },1000)
+})
+
+promiseThree.then(function(data){
+    console.log(data);
+
+}) 
+
+const promiseFour = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      let error = true
+      if(!error){
+        resolve({user: 'Rohan pal from promise four', class: 'ece from promis four'})
+      }
+      
+      else{
+        reject("something went wrong")
+      }
+    },1000)
+})
+
+promiseFour
+.then(function(data){
+    console.log(data);
+    return data.user
+
+}).then(function(chainedData){
+     console.log(chainedData)
+})
+.catch(function(error){
+    console.log(error)
+
+})
+.finally(()=> console.log('This promise is either resolve or rejected'))
+
+
+
+const promiseFive = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      let error = true
+      if(!error){
+        resolve({user: 'java', class: '123'})
+      }
+      
+      else{
+        reject("ERROR : something went wrong")
+      }
+    },1000)
+})
+
+
+
+
+
+
+
+
+
 /*
 
 ⭐ FINAL COMPLETE SUMMARY (Hinglish — One Go)
