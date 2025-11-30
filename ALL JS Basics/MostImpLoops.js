@@ -89,3 +89,28 @@ const cart = [
 const totalAmount = cart.reduce( (acc, item) => {
      return acc + (item.price * item.quantity)
 }, 0)
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++ Summary of array methods ++++++++++++++++++++++++++++++++++++++++++
+
+1. forEach:
+- Use: Iterating over an array to perform side effects.
+- Returns: undefined.
+- Example: Logging each item in an array.
+
+2. map:
+- Use: Transforming each item in an array to create a new array.
+- Returns: A new array with transformed items.
+- Example: Creating a new array with each number increased by 10.
+
+3. filter:
+- Use: Filtering items in an array based on a condition.
+- Returns: A new array with items that meet the condition.
+- Example: Creating a new array with numbers greater than 4.
+
+4. reduce:
+- Use: Reducing an array to a single value by accumulating results.
+- Returns: A single value (e.g., sum, product).
+- Example: Calculating the total amount in a shopping cart.
+*/
