@@ -1,7 +1,8 @@
 
-/*
-
 const promiseOne = new Promise(function (resolve, reject){
+
+    // async task
+   // DB call, file read , network request
 
     setTimeout(function(){
 
@@ -15,7 +16,7 @@ promiseOne.then(function(){
     console.log("promise resolve ")
 })
     
-    */
+    
 
 new Promise(function(resolve, reject){
 
@@ -108,7 +109,7 @@ async function getAllUser(){
     try{
 
         let response = await fetch('https://jsonplaceholder.typicode.com/users')
-        const data = response.json()
+        const data = await response.json() // isme bhi await lagana pdega kyki ye bhi time leta hai data ko json me convert karne me
         console.log(data)
 
     }
@@ -201,3 +202,19 @@ Event loop baad me unhe execute karta hai (call stack empty hone par)
 
    
  */
+
+// ++++++++++++++++++++++++++++++++ Promise ++++++++++++++++++++
+/* 
+
+what is promise ?
+A promise is a JavaScript object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+    It allows you to write asynchronous code in a more manageable and readable way by providing a way to handle success and failure cases.
+    It can be in one of three states:
+    1. Pending: The initial state of a promise, indicating that the asynchronous operation is still in progress.
+    2. Fulfilled: The state of a promise when the asynchronous operation completes successfully, resulting in a resolved value.
+    3. Rejected: The state of a promise when the asynchronous operation fails, resulting in a reason for the failure.
+
+
+    .then() : The .then() method is used to specify the callback functions that will be executed when a promise is fulfilled (resolved) or rejected. It takes two arguments: the first is 
+    reject() function to handle the rejection case
+*/
