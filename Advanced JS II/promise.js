@@ -87,6 +87,24 @@ const promiseFive = new Promise(function(resolve, reject){
     },1000)
 })
 
+async function consumePromiseFive(){
+    try{
+
+        let response = promiseFive
+        console.log(response)
+
+    }
+    catch(error){
+          console.log(error)
+    }
+}
+
+consumePromiseFive()
+
+
+
+
+
 
 
 
