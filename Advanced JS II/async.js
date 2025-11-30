@@ -38,4 +38,9 @@ iske andar do chize hoti hai
 5. fetch ko alag se priority di jati hai taaki wo jaldi complete ho sake aur uske .then() / .catch() wale callbacks ko microtask queue priority queue bhi  me jaldi bheja ja sake.
 
 
+
+setTimeout, setInterval, DOM events ye sab bhi Web APIs ke part hote hain jo asynchronous operations ko handle karte hain.
+core javascript le part nahi hote.
+
+
 */
