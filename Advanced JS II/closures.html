@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange"> Orange</button>
+
+    <button id="green"> Green</button>
+
+    
+    
+</body>
+
+<script>
+        function outer(){
+            let username = "Rohan"
+
+            console.log("Outer", secret) // Error: secret is not defined
+
+            function inner(){
+                console.log("Inner", username)// yaha username ko access kar paega kyki inner function ke paas closure hai
+                console.log("Inner", secret) // Error: secret is not defined
+            }
+
+            function inner2(){
+                let secret = "Mohit"
+                console.log("Inner2", username)// yaha username ko access kar paega kyki inner2 function ke paas apna local variable hai
+            }
+            inner()
+            inner2()
+        }
+        console.log("outer", username)// Error: username is not defined
+    </script>
+
+
+
+<script>
+
+    function clickHandler(color){
+        return function(){
+            document.body.style.backgroundColor = color
+        }
+
+    }
+
+    document.getElementById("orange").onclick = clickHandler("orange")
+    document.getElementById("green").onclick = clickHandler("green")
+    
+
+</script>
+</html>
