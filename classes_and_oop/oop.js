@@ -57,3 +57,18 @@ const userTwo =  new UserConstructor('tea', 'tea123')
 // classes ek syntactical sugar hai jo constructor functions aur prototype based inheritance ko use karte hain
 // classes ES6 me introduce hui thi jisme hum easily constructor aur methods define kar sakte hain
 // classes ke andar hum constructor method define karte hain jo object banane ke liye use hota hai aur dusre methods bhi define kar sakte hain jo prototype me add hote hain
+
+
+// ++++++++++++++++++++++++++++++++++ prototype kya hota hai ? ++++++++++++++++++++++++++++++++++++++++
+
+
+// prototype ek object hota hai jo dusre object ke properties aur methods ko inherit karne ke liye use hota hai
+// jab hum ek object banate hain to wo uske constructor function ke prototype ko apna __proto__ banata hai
+// javacscript haar nahi maanti hai ki humne ek method ko ek object me define kiya hai balki wo uske prototype me bhi dhundti hai
+
+// Array ---> object --> null
+// jab hum array ke kisi method ko call karte hain to javascript pehle array me dhundti hai agar nahi milta to wo uske __proto__ me jati hai jo ki object ko point karta hai aur waha dhundti hai
+// agar waha bhi nahi milta to wo uske __proto__ ke __proto__ me jati hai jo ki null ko point karta hai aur yaha search khatam ho jata hai
+
+
+// hum keh sakte hai JS me har ek chiz ek object hai chahe wo function ho ya array ho ya normal object ho sabka ek prototype hota hai jo uske properties aur methods ko inherit karne ke liye use hota hai.
