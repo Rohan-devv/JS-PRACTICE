@@ -25,12 +25,10 @@
          alert("owl clicked")
      }
 
-
-
-     
+    
     document.getElementById('images').addEventListener('click', function(e){
          console.log('ul clicked')
-    }, false)
+    }, false)  
 
     document.getElementById('owl').addEventListener('click', function(e){
          console.log('owl clicked')
@@ -41,9 +39,9 @@
 
 
     document.getElementById('google').addEventListener('click', function(e){
-         e.preventDefault()  // kisi bhi chiz ke default behaviour ko rokne ke liye
+         e.preventDefault() // kisi bhi chiz ke default behaviour ko rokne ke liye
 
-          e.stopPropagation();// ye event bubbling ko rokta hai
+          e.stopPropagation(); // ye event bubbling ko rokta hai
           
          console.log('google clicked')
     }, false)

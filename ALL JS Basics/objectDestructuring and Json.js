@@ -17,13 +17,14 @@ console.log(name);
 //     "name": "Rohan Pal",
 //     "age": 22,
 //     "company": "TechnoFunnel"
-
+// 
+// }
 
 /*  
 Very Important Note:
 
 // ye ek JSON format hai jo ki JavaScript object jaisa hi dikh raha hai lekin ye string hota hai.
-// jab ye api se data mile to ye string hota hai hume isko JavaScript object me convert karna padta hai jiske liye hum JSON.parse() method ka use karte hain.
+// jab api se data mile to ye string hota hai hume isko JavaScript object me convert karna padta hai jiske liye hum JSON.parse() method ka use karte hain.
 // aur jab hume JavaScript object ko JSON format me convert karna hota hai to hum JSON.stringify() method ka use karte hain.
 // ye dono methods JavaScript ke built-in methods hain jo ki JSON data ko handle karne ke liye use hote hain.
 
@@ -33,7 +34,7 @@ response.json() ek method hai jo:
 ✔ Promise return karta hai (asynchronous hota hai)
 
 Matlab:
-JSON.parse() ka browser version jo fetch() ke andar pehle se built-in hai.
+JSON.parse() ka browser version jo fetch() ke andar pehle se built-in hai--> crux of json.
 👉 response.json() internally JSON.parse() hi use karta hai
 but difference ye hai ki response.json() async hota hai.
 */  

@@ -9,9 +9,10 @@
 
 
 
-// +++++++++++++++++ forEach ka use +++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++ forEach ka use +++++++++++++++++++++++++++++++++++++++++
 
 /* 
+
 const newNums = []
 myNums.forEach( (num) => {
     if(num > 4){
@@ -19,9 +20,10 @@ myNums.forEach( (num) => {
     }
 
 })
+
 */
 
-// +++++++++++++++ filter ka use ++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++ filter ka use ++++++++++++++++++++++++++++++++++++++++
 /*
 const users = [
   { id: 1, name: "Rohan", age: 22 },
@@ -35,7 +37,7 @@ const users = [
  console.log(result);
 */
 
- //++++++++++++++++++++ map ka use ++++++++++++++++++++
+ //++++++++++++++++++++++++++++++++++++++++++++ map ka use +++++++++++++++++++++++++++++++++++++++
 
 /*
 const myNums=[1,2,3,4,5,6,7,8,9]
@@ -46,7 +48,7 @@ const newNums = myNums.map((num)=> {
 */
 
 
-// ++++++++++++++++++++ reduce ka use ++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++ reduce ka use ++++++++++++++++++++++++++++++++++++++++
 /*
 const myNums=[1,2,3]
 
@@ -59,6 +61,7 @@ const sum = myNums.reduce( (acc, currval) => {
 
 console.log(sum);
 */
+
 const cart = [
   {
     id: 1,
@@ -89,6 +92,7 @@ const cart = [
 const totalAmount = cart.reduce( (acc, item) => {
      return acc + (item.price * item.quantity)
 }, 0)
+console.log(totalAmount) 
 
 
 

@@ -203,7 +203,7 @@ Event loop baad me unhe execute karta hai (call stack empty hone par)
    
  */
 
-// ++++++++++++++++++++++++++++++++ Promise ++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++ Promise ++++++++++++++++++++++++++++++++++++++++
 /* 
 
 what is promise ?
@@ -218,3 +218,23 @@ A promise is a JavaScript object that represents the eventual completion (or fai
     .then() : The .then() method is used to specify the callback functions that will be executed when a promise is fulfilled (resolved) or rejected. It takes two arguments: the first is 
     reject() function to handle the rejection case
 */
+
+// ++++++++++++++++++++ JSON ++++++++++++++++++++++
+/*  
+Very Important Note:
+
+// ye ek JSON format hai jo ki JavaScript object jaisa hi dikh raha hai lekin ye string hota hai.
+// jab ye api se data mile to ye string hota hai hume isko JavaScript object me convert karna padta hai jiske liye hum JSON.parse() method ka use karte hain.
+// aur jab hume JavaScript object ko JSON format me convert karna hota hai to hum JSON.stringify() method ka use karte hain.
+// ye dono methods JavaScript ke built-in methods hain jo ki JSON data ko handle karne ke liye use hote hain.
+
+response.json() ek method hai jo:
+
+✔ JSON string ko JavaScript object me convert karta hai
+✔ Promise return karta hai (asynchronous hota hai)
+
+Matlab:
+JSON.parse() ka browser version jo fetch() ke andar pehle se built-in hai.
+👉 response.json() internally JSON.parse() hi use karta hai
+but difference ye hai ki response.json() async hota hai.
+*/  

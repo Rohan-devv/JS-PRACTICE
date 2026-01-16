@@ -13,7 +13,6 @@ one()
 
 // ++++++++++++++++++++++ Hoisting ++++++++++++++++++++++
 
-
 addOne(5)// ye kaam karega because function declaration me jo function hai wo upar jata hai
  function addOne(num){
     return num+1
